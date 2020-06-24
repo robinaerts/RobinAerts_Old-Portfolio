@@ -1,0 +1,505 @@
+:root{
+    --primary-color: #333;
+    --primary-shade: #222;
+    --accent-color: #F6B93B;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Montserrat";
+    overflow-x: hidden;
+    position: relative;
+}
+
+.home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    justify-content: center;
+    text-align: center;
+}
+
+.home-content{
+    z-index: 1;
+    margin-left: 5rem;
+}
+
+.video-wrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-wrap video{
+    object-fit: cover;
+}
+
+.overlay-vid{
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0rem;
+    width: 100vw;
+    background: #55C1Bd;
+    opacity: 50%;
+}
+
+.home-content h1{
+    font-weight: 750;
+    font-size: 5rem;
+    position: relative;
+    top: -10rem;
+    left: 0;
+}
+
+.home-content .accent{
+    color: var(--accent-color);
+} 
+
+.btn {
+    position: relative;
+    top: 6rem;
+    font-weight: 750;
+    font-size: 1.3rem;
+    border: 5px solid white;
+    padding: 1rem 1.5rem;
+}
+
+.btn:hover{
+    background: var(--accent-color);
+}
+
+h2.accent-line-text{
+    border-left: 5px solid var(--accent-color);
+    padding-left: .5rem;
+}
+
+/* Section: Over Mij */
+
+#over{
+    height: 100vh;
+    margin-left: 7rem;
+    padding-top: 2rem;
+}
+
+h3.skill-text{
+    font-weight: 500;
+    text-align: center;
+    margin-top: 1.2rem;
+    padding-bottom: .3rem;
+    /* border-bottom: 3px solid var(--accent-color); */
+    color: #333;
+}
+
+p.over-txt{
+    margin-top: 1.7rem;
+}
+
+.over-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.skill{
+    margin-top: 5rem;
+    width: 320px;
+    height: 400px;
+    border: 5px solid var(--primary-color);
+    position: relative;
+    text-align: center;
+    background: url(/rsc/water.png);
+    background-repeat: repeat-x;
+    background-position: 0px 400px;
+    color: #fff;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.skill1.is-visible{animation: skill1 3s ease-in-out; animation-fill-mode: forwards;}
+.skill2.is-visible{animation: skill2 3s ease-in-out; animation-fill-mode: forwards;}
+.skill3.is-visible{animation: skill3 3s ease-in-out; animation-fill-mode: forwards;}
+.skill4.is-visible{animation: skill4 3s ease-in-out; animation-fill-mode: forwards;}
+
+@keyframes skill1{
+    0%{
+        background-position: 0px 400px;
+    }
+    100%{
+        background-position: 300px 80px;
+    }
+}
+
+@keyframes skill2{
+    0%{
+        background-position: 0px 400px;
+    }
+
+    100%{
+        background-position: 300px 30px;
+    }
+}
+
+@keyframes skill3{
+    0%{
+        background-position: 0px 400px;
+    }
+
+    100%{
+        background-position: 300px 250px;
+    }
+}
+
+@keyframes skill4{
+    0%{
+        background-position: 0px 400px;
+    }
+
+    100%{
+        background-position: 300px 60px;
+    }
+}
+
+
+
+.skill-percentage{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+}
+
+/* Section: Contact */
+
+#contact{
+    height: 90vh;
+    margin-left: 7rem;
+    margin-top: 0rem;
+    padding-top: 2rem;
+    width: 40vw;
+}
+
+img{
+    display: inline-block;
+    width: 600px;
+    margin-left: 5rem;
+}
+
+#contact > p{
+    margin-top: 1.5rem;
+}
+
+.contact-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.contact-container > form{
+    width: 100%;
+}
+
+input{
+    border: #333 solid 5px;
+    margin: 0 0 1.5rem 0;
+    height: 2.5rem;
+    padding-left: .6rem;
+    outline: none;
+    background-color: white;
+    font-family: "Montserrat";
+}
+
+input:focus{
+    border: 5px solid var(--accent-color);
+}
+
+textarea{
+    border: 5px solid #333;
+    margin: 0rem 0rem.8rem 0;
+    padding-left: .6rem;
+    padding-top: 0.2rem;
+    width: 100%;
+    font-size: 1rem;
+    font-family: "Montserrat";
+    resize: none;
+}
+
+textarea:focus{
+    outline: none;
+    border: 5px solid var(--accent-color);
+}
+
+input#submit{
+    padding-right: .6rem;
+    font-weight: 700;
+    width: 50%;
+    margin-top: 1.3rem;
+}
+
+input#submit:hover{
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+}
+
+
+.container-input{
+   display: flex;
+   justify-content: space-between;
+}
+
+.voornaam, .naam{
+    width: 47%;
+}
+
+.voornaam > input, .naam > input{
+    width: 100%;
+}
+
+.email > input{
+    width: 100%;
+    margin-top: 1.2rem;
+}
+
+.submit-div{
+    display: flex;
+    justify-content: center;
+}
+
+.input-div, .email, .message{
+    position: relative;
+}
+
+.word-counter{
+    position: absolute;
+    bottom: 20px;
+    right: 9px;
+}
+
+label{
+    position: absolute;
+    top: 0;
+    left: 4px;
+    margin: 0.65rem 0 1.5rem 0;
+    height: 2.5rem;
+    padding-left: .6rem;
+    outline: none;
+    font-family: "Montserrat";
+    z-index: 1;
+    opacity: .7;
+    font-size: 0.9rem;
+    transition: .5s;
+}
+
+#email-tekst{
+    top: 20px;
+    left: 4px;
+}
+
+input:focus ~ #email-tekst{
+    top: -10px;
+    color: var(--accent-color);
+    font-weight: 600;
+    left: -5px;
+}
+
+input:valid ~ #email-tekst{
+    color: #333;
+    top: -10px;
+    left: -5px;
+}
+
+input:focus ~ label{
+    top: -30px;
+    color: var(--accent-color);
+    font-weight: 600;
+    left: -5px;
+}
+
+input:valid ~ label{   
+    color: #333;
+    top: -30px;
+    left: -5px;
+}
+
+textarea:focus::placeholder{
+    color: var(--accent-color);
+}
+
+label:hover{
+    cursor: text;
+}
+
+.submit-error{
+    color: #BE2E2E;
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: .8rem;
+    position: absolute;
+    top: 2.5rem;
+    left: 0;
+    display: none;
+}
+
+.error3{
+    top: 3.7rem;
+}
+
+.error4{
+    top: 13rem;
+}
+
+.parent-contact-img{
+    display: flex;
+}
+/* Footer */
+#footer{
+    height: 5rem;
+    width: 100vw;
+    background-color: var(--primary-color);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+     bottom: -10rem;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and(max-width: 600px){
+    .home{
+        margin-left: 0;
+        margin-top: 5rem;
+    }
+
+    .home-content{
+        z-index: 1;
+        margin-top: 5rem;
+        position: absolute;
+    }
+    
+    .video-wrap{
+        position: absolute;
+        top: 5rem;
+        left: 0rem;
+        height: 100vh;
+        overflow: hidden;
+    }
+    
+}
+
+
+@media only screen and (max-width: 600px){
+
+    .navbar{
+        width: 100vw;
+        height: 5rem;
+    }
+
+    .navbar:hover{
+        width: 100vw;
+    }
+
+    .nav-items{
+        flex-direction: row;
+    }
+
+    .nav-link{
+        justify-content: center;
+    }
+
+    .first-nav{
+        display: none;
+    }
+
+    .navbar:hover .link-text {
+        display: none;
+    }
+
+    .navbar:hover .nav-logo{
+        margin-left: 1rem;
+    }
+
+    .home{
+        width: 100vw;
+    }
+
+    .home-content{
+        width: 100vw;
+        margin-left: -5rem;
+        margin-top: 5rem;
+    }
+
+    .overlay-vid{
+        width: 100vw;
+    }
+
+    .home-content{
+        margin: auto;
+    }
+
+    .home-content h1{
+        margin-top: 3rem;
+    }
+
+    .video-wrap video{
+        position: relative;
+        top: 0;
+        left: -25rem;
+    }
+
+    .contact-img{
+        display: none;
+    }
+
+    #over{
+        margin-left: 2.5rem;
+    }
+
+    h2.accent-line-text{
+        margin-top: 4rem;
+    }
+
+    .over-container{
+        margin-top: 3.4rem;
+    }
+
+    #contact{
+        margin: 2rem;
+    }
+}
+ 
+@media only screen and (max-width: 1409px){
+    .over-container div{
+        display: none;
+        margin-top: 2rem;
+    }
+
+    .over-container div:first-child{
+        display: block;
+    }
+    .over-container{
+        margin-top:5rem;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .contact-img{
+        display: none;
+    }
+
+    #contact{
+        width: 100vw;
+    }
+}

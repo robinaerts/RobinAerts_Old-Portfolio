@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/rsc/logo.png">
+    <title>Robin Aerts</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+    <script>
+        document.getElementById('video-tag').play();
+    </script>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-items">
+            <li class="nav-item first-nav"><a class="nav-link" href="#"><i class="fas fa-angle-double-right fa-2x"></i><span class="link-text">CLOSE</span></a></li>
+            <li class="nav-item nav-hover"><a class="nav-link" href="#"><i class="fas fa-home fa-2x"></i><span class="link-text">HOME</span></a></li>
+            <li class="nav-item nav-hover"><a class="nav-link" href="#over"><i class="fas fa-info-circle fa-2x"></i><span class="link-text">OVER</span></a></li>
+            <li class="nav-item nav-hover"><a class="nav-link" href="#contact"><i class="fas fa-envelope fa-2x"></i><span class="link-text">CONTACT</span></a></li>
+            <li class="nav-item "><a href="#" class="nav-link"><img class="nav-logo" src="./rsc/logo.png" alt="logo"></a></li>
+        </ul>
+    </nav>
+
+<section class="home">
+        <div class="video-wrap">
+        <video id="video-tag" src="/rsc/typing.mp4" autoplay="true" loop="true" muted></video>
+    </div>
+    <div class="overlay-vid"></div>
+    <div class="home-content">
+        <h1>Hallo, ik ben <span class="accent">Robin</span></h1>
+        <a href="#over" class="btn">OVER MIJ</a>
+    </div>
+</section>
+
+<section id="over">
+    <h2 class="accent-line-text">Over Mij</h2>
+    <p class="over-txt">
+        Hallo! Ik ben Robin Aerts. Ik ben een web developer, een UI/UX designer en ook een professionele foto- en videobewerker. Als je mij wil inhuren voor een project kan je mij altijd contacteren op het onderstaande formulier bij 'contact'.
+    </p>
+    <div class="over-container">
+        <div class="skill1 skill showonscroll">
+            <h3 class="skill-text">HTML & CSS</h3>
+            <h2 class="skill-percentage">70%</h2>
+        </div>
+        <div class="skill2 skill showonscroll">
+            <h3 class="skill-text">UI/UX</h3>
+            <h2 class="skill-percentage">90%</h2>
+        </div>
+        <div class="skill3 skill showonscroll">
+            <h3 class="skill-text">My SQL</h3>
+            <h2 class="skill-percentage">30%</h2>
+        </div>
+        <div class="skill4 skill showonscroll">
+            <h3 class="skill-text">Photoshop</h3>
+            <h2 class="skill-percentage">80%</h2>
+        </div>
+    </div>
+</section>
+
+<div class="parent-contact-img">
+<section id="contact">
+    <h2 class="accent-line-text">Contacteer Mij</h2>
+    <p>Hier kan je een berichtje voor mij achterlaten of kan je een verzoek voor een project indienen.</p>
+    <div class="contact-container">
+        <form action="/success.html" class="contact-form" autocomplete="off" netlify>
+           <div class="container-input">
+               <div class="voornaam input-div">
+                    <input type="text" name="voornaam-input" id="voornaam-input" required>
+                    <label id="voornaam-label" for="voornaam-input">Voornaam*</label>
+                    <h4 class="submit-error error1">* Dit is een verplicht veld</h4> 
+                </div>
+           <div class="naam input-div">
+           <input type="text" name="naam-input" id="naam-input" required>
+           <label for="naam-input">Naam*</label>
+           <h4 class="submit-error error2">* Dit is een verplicht veld</h4> 
+           </div>
+        </div>
+           <div class="email ">
+               <input type="text" name="email-input" id="email-input" required>
+               <label id="email-tekst" for="email-input">Email*</label>
+               <h4 class="submit-error error3">* Dit is een verplicht veld</h4> 
+           </div>
+           <div class="message">
+               <textarea  name="message" id="area" cols="30" rows="10" maxlength="500" required placeholder="Vul je bericht hier in...*"></textarea>
+               <!-- <label for="input-message">Vul je bericht hier in...*</label> -->
+               <h4 class="submit-error error4">* Dit is een verplicht veld</h4> 
+               <div class="word-counter">0/500</div>
+                <script src="counter.js" defer></script>
+           </div>
+           <div class="submit-div">
+           <input id="submit" type="submit" value="VERSTUUR">
+        </div>
+        <script src="formsubmit.js" defer></script>
+        </form>
+    </div>
+    </section> 
+    <img class="contact-img" src="/rsc/contact.svg" alt="contact-img"> 
+</div>
+
+<footer id="footer">
+    <p>&copy;2020, All Rights Reserved | An original site by Robin</p>
+</footer>
+    
+    <script src="https://kit.fontawesome.com/32d11d6244.js" crossorigin="anonymous" defer></script>
+    <script src="scroll.js" defer></script>
+    <script src="responsive-skills.js" defer></script>
+</body>
+</html>
