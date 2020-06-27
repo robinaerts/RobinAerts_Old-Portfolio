@@ -98,3 +98,11 @@ i{
 .navbar:hover .fa-angle-double-right{
     transform: rotate(-180deg);
 }
+
+.fa-lightbulb{
+    text-align: center;
+}
+
+.fa-home{
+    margin: 0 1.4rem;
+}

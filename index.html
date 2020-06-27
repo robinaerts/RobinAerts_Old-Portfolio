@@ -12,17 +12,24 @@
     <script>
         document.getElementById('video-tag').play();
     </script>
+    <script src="./project.js"></script>
 </head>
 <body>
+
+<!-- Nav -->
+
     <nav class="navbar">
         <ul class="nav-items">
             <li class="nav-item first-nav"><a class="nav-link" href="#"><i class="fas fa-angle-double-right fa-2x"></i><span class="link-text">CLOSE</span></a></li>
             <li class="nav-item nav-hover"><a class="nav-link" href="#"><i class="fas fa-home fa-2x"></i><span class="link-text">HOME</span></a></li>
             <li class="nav-item nav-hover"><a class="nav-link" href="#over"><i class="fas fa-info-circle fa-2x"></i><span class="link-text">OVER</span></a></li>
             <li class="nav-item nav-hover"><a class="nav-link" href="#contact"><i class="fas fa-envelope fa-2x"></i><span class="link-text">CONTACT</span></a></li>
+            <li class="nav-item nav-hover"><a class="nav-link" href="#projects"><i class="fas fa-lightbulb fa-2x"></i><span class="link-text">PROJECTEN</span></a></li>
             <li class="nav-item "><a href="#" class="nav-link"><img class="nav-logo" src="./rsc/logo.png" alt="logo"></a></li>
         </ul>
     </nav>
+
+<!-- Home -->
 
 <section class="home">
         <div class="video-wrap">
@@ -35,30 +42,100 @@
     </div>
 </section>
 
+<!-- About -->
+
 <section id="over">
     <h2 class="accent-line-text">Over Mij</h2>
     <p class="over-txt">
         Hallo! Ik ben Robin Aerts. Ik ben een web developer, een UI/UX designer en ook een professionele foto- en videobewerker. Als je mij wil inhuren voor een project kan je mij altijd contacteren op het onderstaande formulier bij 'contact'.
     </p>
     <div class="over-container">
-        <div class="skill1 skill showonscroll">
-            <h3 class="skill-text">HTML & CSS</h3>
-            <h2 class="skill-percentage">70%</h2>
+        <div class="skill-group">
+            <div class="skill-heading-container">
+                <i class="fas fa-code fa-2x skill-icon"></i>
+                <h3 class="skill-text">WEB DEVELOPMENT</h3>
+            </div>
+            <div class="skill-items-container">
+                <h4 class="skill-name">HTML 5</h4>
+                <h4 class="skill-name">CSS 3</h4>
+                <h4 class="skill-name">MySQL</h4>
+                <h4 class="skill-name">SASS</h4>
+            </div>
+            <div class="skill-read-more">
+                    <a href="#projects" class="skill-read-more-link"><h5 class="read-more-text">Bekijk Projecten</h5></a>
+                    <i class="fas fa-chevron-down"></i>
+            </div>
         </div>
-        <div class="skill2 skill showonscroll">
-            <h3 class="skill-text">UI/UX</h3>
-            <h2 class="skill-percentage">90%</h2>
-        </div>
-        <div class="skill3 skill showonscroll">
-            <h3 class="skill-text">My SQL</h3>
-            <h2 class="skill-percentage">30%</h2>
-        </div>
-        <div class="skill4 skill showonscroll">
-            <h3 class="skill-text">Photoshop</h3>
-            <h2 class="skill-percentage">80%</h2>
-        </div>
+        <div class="skill-group">
+            <div class="skill-heading-container">
+                <i class="fas fa-photo-video fa-2x skill-icon"></i>
+                <h3 class="skill-text">PHOTO & VIDEO EDITING</h3>
+            </div>
+            <div class="skill-items-container">
+                <h4 class="skill-name">Photoshop</h4>
+                <h4 class="skill-name">Illustrator</h4>
+                <h4 class="skill-name">Première Pro</h4>
+                <h4 class="skill-name">After Effects</h4>
+                <h4 class="skill-name">Adobe XD</h4>
+                <h4 class="skill-name">Blender</h4>
+            </div>
+            <div class="skill-read-more">
+                <a href="#projects" class="skill-read-more-link"><h5 class="read-more-text">Bekijk Projecten</h5></a>
+                    <i class="fas fa-chevron-down"></i>
+            </div>
     </div>
 </section>
+
+<!-- Projecten -->
+
+<section id="projects">
+    <h2 class="accent-line-text">Mijn Projecten</h2>
+    <div class="project-container">
+        <a class="project-link" href="projects/ouderraad.html"><div class="project project1">
+            <div class="gradient-overlay"></div>
+            <h3 class="project-title">BROCHURE OUDERRAAD</h3>
+        </div>
+    </a>
+    <a href="/projects/martine.html" class="project-link">
+        <div class="project project2">
+            <div class="gradient-overlay"></div>
+            <h3 class="project-title">TRAILER MARTINE</h3>
+        </div>
+    </a>
+    <a href="/projects/drank.html" class="project-link">
+        <div class="project project3">
+            <div class="gradient-overlay"></div>
+            <h3 class="project-title">DRANK BLIK</h3>
+        </div>
+    </a>
+    <a href="/projects/kerstkaartje.html" class="project-link">
+        <div class="project project4">
+            <div class="gradient-overlay"></div>
+            <h3 class="project-title">KERST KAARTJE</h3>
+        </div>
+    </a>
+    <a href="/projects/strip.html" class="project-link">
+        <div class="project project5">
+            <div class="gradient-overlay"></div>
+            <h3 class="project-title">STRIP VERHAAL</h3>
+        </div>
+    </a>
+    <a href="/projects/isometrisch.html" class="project-link">
+        <div class="project project6">
+            <div class="gradient-overlay"></div>
+            <h3 class="project-title">ISOMETRISCH PERSPECTIEF</h3>
+        </div>
+    </a>
+    <a href="/projects/documentaire.html" class="project-link">
+        <div class="project project7">
+            <div class="gradient-overlay"></div>
+            <h3 class="project-title">DOCU - MENTAIRE</h3>
+        </div>
+    </a>
+    </div>
+</section>
+
+<!-- Contact -->
 
 <div class="parent-contact-img">
 <section id="contact">
@@ -100,12 +177,13 @@
     <img class="contact-img" src="/rsc/contact.svg" alt="contact-img"> 
 </div>
 
+<!-- Footer -->
+
 <footer id="footer">
     <p>&copy;2020, All Rights Reserved | An original site by Robin</p>
 </footer>
     
     <script src="https://kit.fontawesome.com/32d11d6244.js" crossorigin="anonymous" defer></script>
     <script src="scroll.js" defer></script>
-    <script src="responsive-skills.js" defer></script>
 </body>
 </html>

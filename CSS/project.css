@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+    font-weight: 750;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: #f6b93b;
+    display: flex;
+    flex-direction: column;
+}
+
+.go_back{
+    color: #000;
+    text-decoration: none;
+    border: 5px solid black;
+    padding: 10px;
+    align-self: center;
+}
+
+.uitleg p{
+    align-self: center;
+    width: 400px;
+
+}
+
+.go_back:hover{
+    color: white;
+    border: 5px solid white;
+}
+
+h1{
+    margin: 3rem;
+    border-bottom: 3px black;
+    justify-self: center;
+    align-self: center;
+}
+
+.container-items{
+    display: flex;
+    width: 100vw;
+}
+
+.uitleg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    border-left: 3px solid #333;
+    width: 50%;
+}
+
+.uitleg img{
+    margin: 3rem;
+    max-height: 350px;
+}
+
+.image-container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.image-container img{
+    width: 680px;
+}
+
+.img-ouderraad{
+    width: 480px!important
+}
+
+.fixed-height{
+    height: 580px;
+}
+
+h5{
+    color: white;
+    position: absolute;
+    margin-top: 1rem;
+}
+
+iframe{
+    border: none;
+    width: 80%;
+}
+
+.strip{
+    margin-top: 10rem;
+}
+
+.isometric-1,
+.isometric-2{
+    margin: 1.2rem;
+}
