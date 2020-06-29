@@ -74,7 +74,8 @@ h1{
 }
 
 .fixed-height{
-    height: 580px;
+    height: 100%;
+    width: 100%;
 }
 
 h5{
@@ -95,4 +96,22 @@ iframe{
 .isometric-1,
 .isometric-2{
     margin: 1.2rem;
+}
+
+@media only screen and (max-width: 800px){
+    .container-items{
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .image-container,
+    .uitleg{
+    width: 100%;
+    border: none;
+    margin-bottom: 1rem;
+    }
+    .uitleg p{
+        width: 90vw;
+    }
 }
