@@ -49,3 +49,7 @@ $("input[type='submit']").on("click",function(){
         errortxt4.css("display","none")
     }
 });
+
+$('#area').keyup(function(){
+    $('.word-counter').text(this.value.length+'/500');
+    })
