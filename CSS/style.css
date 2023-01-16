@@ -415,13 +415,13 @@ label:hover{
     border: 8px solid var(--accent-color);
 }
 
-.project1{background: url('/rsc/Projects/project1.png') center center/cover;}
-.project2{background: url('/rsc/Projects/project2.png') center center/cover;}
-.project3{background: url('/rsc/Projects/project3.png') center center/cover;}
-.project4{background: url('/rsc/Projects/project4.png') center center/cover;}
-.project5{background: url('/rsc/Projects/project5.png') center center/cover;}
-.project6{background: url('/rsc/Projects/project6.png') center center/cover;}
-.project7{background: url('/rsc/Projects/project7.png') center center/cover;}
+.project1{background: url('./rsc/Projects/project1.png') center center/cover;}
+.project2{background: url('./rsc/Projects/project2.png') center center/cover;}
+.project3{background: url('./rsc/Projects/project3.png') center center/cover;}
+.project4{background: url('./rsc/Projects/project4.png') center center/cover;}
+.project5{background: url('./rsc/Projects/project5.png') center center/cover;}
+.project6{background: url('./rsc/Projects/project6.png') center center/cover;}
+.project7{background: url('./rsc/Projects/project7.png') center center/cover;}
 
 .project-title{
     z-index: 1;
